@@ -1,0 +1,288 @@
+/* Importar la nueva tipografía moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Tipografía principal y estilos generales */
+body {
+  font-family: 'Poppins', sans-serif; /* Aplicar una fuente clara a todo el texto */
+  color: #160505; /* Color general del texto */
+}
+
+/* Agregar animación de desvanecimiento en la carga de la página */
+
+
+/* Animación para fadeIn */
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
+  gap: 6em;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .75rem 1rem;
+  margin: 1em;
+  background-color: #CDAB62;
+  border-radius: 1em;
+  transition: background-color 0.3s ease; /* Animación suave en el color de fondo */
+}
+
+/* Cambiar color de fondo del header cuando el usuario pasa el mouse */
+header:hover {
+  background-color: #B39452;
+}
+
+header h1 {
+  font-size: 2.2em;
+  margin: 0;
+  font-weight: 600;
+  
+}
+
+
+
+header .enlaces {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.logo a {
+  color: #6D4B02;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #470505;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+/* Cambiar color de enlace en hover */
+nav ul li a:hover {
+  color: #9D7B32;
+}
+
+.subscribe-btn {
+  background-color: #9D7B32;
+  color: #FFFFEE;
+  padding: .75rem 1.2rem;
+  text-decoration: none;
+  border-radius: .75rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Añadir transiciones suaves */
+}
+
+/* Animación al pasar el mouse sobre el botón */
+.subscribe-btn:hover {
+  background-color: #B39452;
+  transform: translateY(-5px); /* Efecto de elevación */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rem;
+  margin-bottom: 3rem;
+}
+
+/* Hero */
+.hero h2  {
+  margin-bottom: 30px;
+  font-size: 3.5rem;
+  width: 500px;
+  padding: 5px;
+  margin: 1rem auto;
+  background-color: #333;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #470505;
+  border: 1px solid rgb(206, 172, 99);
+  border-radius: 1rem;
+
+}
+
+/* Animación de fade-in para el héroe */
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 300;
+  transition: transform 0.3s ease;
+}
+
+/* Aplicar un efecto de escala al pasar el mouse por el párrafo */
+.hero p:hover {
+  transform: scale(1.05);
+}
+
+/* General Styling for Text Boxes */
+.text-box {
+  background-color: #ffffff; /* Fondo blanco para destacar */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin: 1.5em auto; /* Espaciado vertical */
+  width: 80%; /* Ancho del recuadro para que no sea tan grande */
+  text-align: center; /* Centrar el texto */
+  color: #333; /* Color de texto más oscuro */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Aplicar un efecto de elevación en hover */
+.text-box:hover {
+  transform: translateY(-10px); /* Elevar el recuadro */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Aumentar la sombra */
+}
+
+/* Aplicar recuadros a las secciones sin borde */
+.about-us, .hero p {
+  background-color: #f0f0f0; /* Fondo claro para diferenciar el contenido */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  width: 85%; /* Ancho controlado */
+  margin: 1.5rem auto; /* Centrar en la página y agregar espaciado vertical */
+}
+
+.about-us h3, .about-us h4, .hero h2 {
+  background-color: #FFEECA; /* Mantener consistencia con otros elementos */
+  padding: 10px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  margin: 0 auto 1rem auto;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #333;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0 3em;
+}
+
+.about-us p {
+  font-size: 1rem;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para el equipo con mejor uso del espacio */
+.team .member {
+  background-color: #333; /* Fondo blanco */
+  padding: 20px;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: center; /* Centrar el contenido */
+  width: 28%; /* Mejor uso del espacio horizontal */
+  margin: 1em; /* Espacio entre los recuadros */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animación al pasar el mouse sobre los miembros del equipo */
+.team .member:hover {
+  transform: translateY(-10px); /* Elevar los recuadros del equipo */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Aumentar la sombra */
+}
+
+.team .member p {
+  font-size: 1rem;
+  color: #7f8c8d;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.team-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease; /* Agregar transición suave */
+}
+
+/* Efecto de zoom sobre la imagen del miembro al pasar el mouse */
+.team-photo:hover {
+  transform: scale(1.1);
+}
+
+/* Ajustes para el contenedor del equipo */
+.team {
+  display: flex;
+  justify-content: space-between; /* Separar los miembros horizontalmente */
+  flex-wrap: wrap; /* Ajustar en múltiples filas si es necesario */
+  width: 90%; /* Utilizar mejor el ancho disponible */
+  margin: 0 auto; /* Centrar el equipo en la página */
+}
+
+/* Tecnologia */
+.tech {
+  color: #333;
+}
+
+/* Modelos */
+.model h1 {
+  color: #333;
+}
+
+.model-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.model-item img {
+  width: 100px;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Agregar transición suave */
+}
+
+/* Efecto de zoom sobre las imágenes del modelo */
+.model-item img:hover {
+  transform: scale(1.1);
+}
+
+.model-item p {
+  font-size: 1rem;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}

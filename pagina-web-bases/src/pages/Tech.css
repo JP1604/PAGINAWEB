@@ -1,0 +1,53 @@
+.tech {
+    /* max-width: 1200px; */
+    margin: 0 2rem 2rem;
+    padding: 1.25rem;
+    background-color: #f0f4f8;
+    border-radius: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.intro, .content-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: #444;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.chart-wrapper {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 10px 0;
+}
+
+canvas {
+    width: 90%;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.content-sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.2em;
+}

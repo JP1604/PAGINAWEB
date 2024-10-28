@@ -1,0 +1,93 @@
+.model {
+    max-width: 1200px; /* Ajusta el ancho total de la página */
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .gallery-title {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  .model-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly; /* Distribuye los logos uniformemente en la línea */
+    padding: 20px 40px; /* Añade márgenes laterales para "bordes" */
+    margin-bottom: 40px;
+    max-width: 100%; /* Asegura que ocupe todo el ancho */
+  }
+
+  .model-gallery img {
+    width: 80px; /* Tamaño de cada logo */
+    height: auto;
+  }
+
+  .brand-details {
+    display: grid;
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .brand-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .brand-item h2 {
+    font-size: 1.3rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+
+  .brand-item p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: .5rem;
+  }
+
+  .brand-item img {
+    width: 80px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+
+  .chart-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .chart-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  canvas {
+    width: 80%;
+    height: 200px;
+    max-width: 500px;
+  }
+
+.model-cars {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.model-cars img {
+    width: 180px;
+}
